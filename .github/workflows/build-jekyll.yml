@@ -3,15 +3,17 @@ name: Github Pages
 on:
   push:
     branches:
-      - master  # Here source code branch is `master`, it could be other branch
+      - master  # 브랜치명이 main이면 main으로 변경해야 함
 
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # 배포를 위해 쓰기 권한 추가
     steps:
       - uses: actions/checkout@v4
 
-      # Use GitHub Actions' cache to cache dependencies on servers
+      # 의존성 캐싱 (빌드 속도 향상)
       - uses: actions/cache@v4
         with:
           path: vendor/bundle
@@ -19,15 +21,21 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
 
-      # Use GitHub Deploy Action to build and deploy to Github
+      # Jekyll 배포 액션 실행
       - uses: jeffreytse/jekyll-deploy-action@v0.6.0
         with:
           provider: 'github'
-          token: ${{ secrets.GITHUB_TOKEN }} # It's your Personal Access Token(PAT)
-          repository: ''             # Default is current repository
-          branch: 'gh-pages'         # Default is gh-pages for github provider
-          jekyll_src: './'           # Default is root directory
-          jekyll_cfg: '_config.yml'  # Default is _config.yml
-          jekyll_baseurl: '/jekyll-theme-yat'  # Default is empty
-          cname: ''                  # Default is to not use a cname
-          actor: ''                  # Default is the GITHUB_ACTOR
+          token: ${{ secrets.GITHUB_TOKEN }} 
+          repository: ''             
+          branch: 'gh-pages'         
+          jekyll_src: './'           
+          jekyll_cfg: '_config.yml'  
+          
+          # [중요 수정 1] 데모용 URL 제거 (빈칸으로 두면 자동 설정됨)
+          jekyll_baseurl: ''         
+          
+          # [중요 수정 2] Sass 오류 해결을 위해 Ruby 3.3 버전 강제 지정
+          ruby_version: '3.3'
+          
+          cname: ''                  
+          actor: ''
