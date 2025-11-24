@@ -1,32 +1,13 @@
 ---
 layout: post
-title: 깃허브 블로그 시작합니다!
-subtitle: 안녕안녕
+title: Intro
+subtitle: 깃허브 블로그 시작합니다.
 categories: Vlog
 tags: [example, markdown]
 ---
 
-# 안녕
-## 안녕
-### 안녕
+### 안녕하세요, 이현림입니다.<br>
+오늘부터 열심히 사이트 구축을 해보려 합니다. <br>
+열심히 해보께요 ㅜㅜ<br>
 
-나는  
-준모  
-
-- 1. 안녕  
-안녕  
-**안녕**  
-
-$$M_{k}$$
-**라텍스 문법**
-$M^2$ 이에요
-
-```python
-def hello
-```
-
-```java
-system.out.printIn("Hello!")
-```
-
-dcdd
+***<span style="color: #FF8C00">레전드 코딩 잼병이지만</span>***
