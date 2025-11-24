@@ -4,6 +4,14 @@ title: Intro
 subtitle: 깃허브 블로그 시작합니다.
 categories: Vlog
 tags: [example, markdown]
+banner:
+  image: /assets/images/post_image/image1.jpg
+  opacity: 0.618
+  background: "#000"
+  height: "100vh"
+  min_height: "38vh"
+  heading_style: "font-size: 4.25em; font-weight: bold; text-decoration: underline"
+  subheading_style: "color: gold"
 ---
 
 ### 안녕하세요, 이현림입니다.<br>
