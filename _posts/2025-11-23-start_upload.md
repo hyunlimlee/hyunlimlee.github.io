@@ -8,6 +8,10 @@ tags: [example, markdown]
 
 ### 안녕하세요, 이현림입니다.<br>
 오늘부터 열심히 사이트 구축을 해보려 합니다. <br>
-열심히 해보께요 ㅜㅜ<br>
+열심히 해보께요<br>
 
-***<span style="color: #FF8C00">레전드 코딩 잼병이지만</span>***
+***<span style="color: #FF8C00">레전드 코딩 잼병이지만</span>***<br>
+**<span style="color: #0054FF">화이팅!</span>**
+
+<img src="/assets/images/post_image/image1.jpg" alt="점프샷" style="float: left; margin-right: 20px;">
+<div style="clear: both;"></div>
