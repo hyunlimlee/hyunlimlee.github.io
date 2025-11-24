@@ -2,7 +2,7 @@ name: Deploy Jekyll with GitHub Actions
 
 on:
   push:
-    branches: ["master"] # 브랜치 이름이 main이면 main으로 수정하세요!
+    branches: ["main"] # 브랜치 이름이 main이면 main으로 수정하세요!
 
   # Actions 탭에서 수동으로 실행할 수 있게 해줌
   workflow_dispatch:
