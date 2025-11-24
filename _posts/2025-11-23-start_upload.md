@@ -5,7 +5,7 @@ subtitle: 깃허브 블로그 시작합니다.
 categories: Vlog
 tags: [example, markdown]
 banner:
-  image: /assets/images/post_image/image1.jpg
+  image: /assets/images/post_image/post1_banner.jpg
   opacity: 0.618
   background: "#000"
   height: "100vh"

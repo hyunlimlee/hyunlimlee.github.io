@@ -160,11 +160,11 @@ yat:
 #   - about.md
 
 # Page default value
-# defaults:
-#   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
-#     banner: "Your image url"
+defaults:
+  home:
+    heading: "Learning, Building, Growing"
+    subheading: "start date: 25.11.23"
+    banner: "Your image url"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
