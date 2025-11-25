@@ -1056,6 +1056,125 @@ function googleTranslateElementInit() {
 
 <li class="post-item ">
   <h2 class="post-title">
+    <a class="post-link" href="/code/2025/11/24/radar_code.html">
+      Pluto SDR CW 레이더 실험 코드<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> Nov 24, 2025</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/code/2025/11/24/radar_code.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(/assets/images/default-image.jpeg); height: 160px"></div>
+    </a><a class="post-text" href="/code/2025/11/24/radar_code.html">
+      <p>📡 SDR 주파수 제한 범위 늘리기
+Pluto SDR의 주파수 제한 범위를 약 6 GHz까지 늘리는 코드입니다.
+
+# 여기에 파이썬 코드를 넣으세요
+import adi
+
+print("PlutoSDR 연결 시도 중...")
+
+try:
+    # 1. 연결
+    sdr = adi.Pluto("ip:192.168.2.1")
+    
+    # 2. 5.8 GHz 설정 시도 (원래는 안 되는 주파수)
+    sdr.rx_lo = 5800000000 # 5.8 GHz
+    sdr.tx_lo = 5800000000
+    
+    # 3. 설정된 값 읽어오기
+    real_rx = int(sdr.rx_lo)
+    
+ ... <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags">
+<a class="post-tag" href="/tags.html#pluto-sdr">#pluto-sdr</a><a class="post-tag" href="/tags.html#python">#python</a>
+</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
     <a class="post-link" href="/25capstone/2025/11/24/capstone_post.html">
       CW 레이다 실험 첫단계<span class="post-badges">
   <span class="post-badge badge-top">TOP</span>
@@ -1070,7 +1189,13 @@ function googleTranslateElementInit() {
 <a class="post-image" href="/25capstone/2025/11/24/capstone_post.html" style="flex: 0 1 38.2%">
       <div style="background-image: url(/assets/images/post_image/25_capstone_1.jpg); height: 160px"></div>
     </a><a class="post-text" href="/25capstone/2025/11/24/capstone_post.html">
-      <p>오늘은 Pluto SDR을 사용해 CW 레이다 실험을 진행했습니다.
+      <p>25.11.24
+오늘은 Pluto SDR을 사용해 CW 레이다 실험을 진행했습니다.
+
+Pluto SDR이 기본적으로 제공하는 주파수 제한 범위는 3.5 GHz 이하로 낮기 때문에 내부 해킹을 통해 늘려야 하는데요,
+👇 코드는 아래 포스트에서 확인하실 수 있어용 👇
+
+💻 실험 코드 보러가기
  <span class="read_more">Read More</span></p>
     </a>
   </div>
@@ -1221,7 +1346,7 @@ function googleTranslateElementInit() {
   <ul>
     <li>
       <a href="/index.html">
-        All<span>3</span>
+        All<span>4</span>
       </a>
     </li>
 
@@ -1229,6 +1354,12 @@ function googleTranslateElementInit() {
       <li>
         <a href="/categories.html#h-25Capstone">
           25Capstone <span>1</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/categories.html#h-Code">
+          Code <span>1</span>
         </a>
       </li>
     
